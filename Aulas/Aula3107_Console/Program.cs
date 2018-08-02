@@ -80,7 +80,7 @@ namespace Aula3107_Console
         }
         static void multipicacao(int num1, int num2)
         {
-            Console.WriteLine("A multiplicação dos números é: " + (num1 * num2));
+            Console.WriteLine("A multiplicação dos números é : " + (num1 * num2));
             Console.ReadKey();
         }
 
@@ -90,4 +90,5 @@ namespace Aula3107_Console
             Console.ReadKey();
         }
     }
+
 }
