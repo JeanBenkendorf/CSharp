@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="338" Width="437">
+    <Grid Margin="0,0,2,0">
+        <Button x:Name="btn1" Content="1" HorizontalAlignment="Left" Height="32" Margin="164,129,0,0" VerticalAlignment="Top" Width="43" Click="btn1_Click"/>
+        <Button x:Name="btn2" Content="2" HorizontalAlignment="Left" Height="32" Margin="219,129,0,0" VerticalAlignment="Top" Width="43" Click="btn2_Click"/>
+        <Button x:Name="btn3" Content="3" HorizontalAlignment="Left" Height="32" Margin="274,129,0,0" VerticalAlignment="Top" Width="43" Click="btn3_Click"/>
+        <Button x:Name="ctna" Content="+" HorizontalAlignment="Left" Height="32" Margin="329,129,0,0" VerticalAlignment="Top" Width="43" Click="ctna_Click"/>
+        <Button x:Name="btn4" Content="4" HorizontalAlignment="Left" Height="32" Margin="164,174,0,0" VerticalAlignment="Top" Width="43" Click="btn4_Click"/>
+        <Button x:Name="btn5" Content="5" HorizontalAlignment="Left" Height="32" Margin="219,174,0,0" VerticalAlignment="Top" Width="43" Click="btn5_Click"/>
+        <Button x:Name="btn6" Content="6" HorizontalAlignment="Left" Height="32" Margin="274,174,0,0" VerticalAlignment="Top" Width="43" Click="btn6_Click"/>
+        <Button x:Name="btns" Content="-" HorizontalAlignment="Left" Height="32" Margin="329,174,0,0" VerticalAlignment="Top" Width="43" Click="btns_Click"/>
+        <Button x:Name="btn7" Content="7" HorizontalAlignment="Left" Height="32" Margin="164,219,0,0" VerticalAlignment="Top" Width="43" Click="btn7_Click"/>
+        <Button x:Name="btn8" Content="8" HorizontalAlignment="Left" Height="32" Margin="219,219,0,0" VerticalAlignment="Top" Width="43" Click="btn8_Click"/>
+        <Button x:Name="btn9" Content="9" HorizontalAlignment="Left" Height="32" Margin="274,219,0,0" VerticalAlignment="Top" Width="43" Click="btn9_Click"/>
+        <Button x:Name="btnm" Content="*" HorizontalAlignment="Left" Height="32" Margin="329,219,0,0" VerticalAlignment="Top" Width="43" Click="btnm_Click"/>
+        <Button x:Name="btn0" Content="0" HorizontalAlignment="Left" Height="32" Margin="164,264,0,0" VerticalAlignment="Top" Width="43" Click="btn0_Click"/>
+        <Button x:Name="btnp" Content="." HorizontalAlignment="Left" Height="32" Margin="219,264,0,0" VerticalAlignment="Top" Width="43"/>
+        <Button x:Name="btni" Content="=" HorizontalAlignment="Left" Height="32" Margin="274,264,0,0" VerticalAlignment="Top" Width="43" Click="btni_Click"/>
+        <Button x:Name="btnd" Content="/" HorizontalAlignment="Left" Height="32" Margin="329,264,0,0" VerticalAlignment="Top" Width="43" Click="btnd_Click"/>
+        <Button x:Name="btnc" Content="c" HorizontalAlignment="Left" Height="32" Margin="329,86,0,0" VerticalAlignment="Top" Width="43" Click="btnc_Click"/>
+        <TextBox x:Name="txtResultado" HorizontalAlignment="Left" Height="32" Margin="164,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153"/>
+
+    </Grid>
+</Window>
