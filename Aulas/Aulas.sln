@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula0708_WPF", "WpfApp1\Aul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp3", "WpfApp3\WpfApp3.csproj", "{8BFB443C-5565-47E8-B402-6B760C8E3832}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula1408_InstalandoEmtity1", "Aula1408_InstalandoEmtity1\Aula1408_InstalandoEmtity1.csproj", "{73BA0181-B997-43C7-8008-476C98A80A6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{8BFB443C-5565-47E8-B402-6B760C8E3832}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BFB443C-5565-47E8-B402-6B760C8E3832}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BFB443C-5565-47E8-B402-6B760C8E3832}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73BA0181-B997-43C7-8008-476C98A80A6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73BA0181-B997-43C7-8008-476C98A80A6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73BA0181-B997-43C7-8008-476C98A80A6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73BA0181-B997-43C7-8008-476C98A80A6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
