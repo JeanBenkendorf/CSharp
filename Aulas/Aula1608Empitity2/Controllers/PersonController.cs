@@ -62,9 +62,15 @@ namespace Aula1608Empitity2.Controllers
         List<Person> PesquisarPorFirstName(string firstName)
         {
             AdventureWorks2016Entities contexto = new AdventureWorks2016Entities;
-            //
+            //LINQ
             var lista = from p in contexto.Person
-                       select p;
+                       select p;//SELECT * FROM PERSON
+
+            var lista = from p in contexto.Person
+                        where p.FirstName == firstName
+                        select p;//select * from (buscar por nome)
+            return lista.ToList();
+
 
         }
     }
