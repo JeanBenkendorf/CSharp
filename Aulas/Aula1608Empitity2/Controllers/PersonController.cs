@@ -44,7 +44,7 @@ namespace Aula1608Empitity2.Controllers
         }
         void editar (int id, Person novoDadosPerson)
             {
-            Person personAntigo = BuscarPorID(ID);
+            Person personAntigo = BuscarPorID(id);
 
             if(personAntigo != null)
             {
@@ -61,15 +61,18 @@ namespace Aula1608Empitity2.Controllers
 
         List<Person> PesquisarPorFirstName(string firstName)
         {
-            AdventureWorks2016Entities contexto = new AdventureWorks2016Entities;
+            AdventureWorks2016Entities contexto = new AdventureWorks2016Entities();
             //LINQ
-            var lista = from p in contexto.Person
-                       select p;//SELECT * FROM PERSON
+            //var lista = from p in contexto.Person
+            //           select p;//SELECT * FROM PERSON
 
             var lista = from p in contexto.Person
                         where p.FirstName == firstName
                         select p;//select * from (buscar por nome)
             return lista.ToList();
+
+            //exemplos de linq https://code.msdn.microsoft.com/101-LINQ-Samples-3fb9811b
+
 
 
         }
