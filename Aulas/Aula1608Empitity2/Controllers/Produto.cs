@@ -35,9 +35,10 @@ namespace Aula1608Empitity2.Controllers
                 AdventureWorks2016Entities contexto = new AdventureWorks2016Entities();
                 contexto.Product.Remove(pExcluir);
                 contexto.SaveChanges();
-    
+
             }
-            void editar (int id, Product NovoDadosProduct)
+        }
+            void Editar (int id, Product NovoDadosProduct)
             {
                 Product ProductAntigo = BuscarPorId(id);
                 if( ProductAntigo != null)
@@ -53,11 +54,12 @@ namespace Aula1608Empitity2.Controllers
             }
             List<Product> PesquisarPorName(String name)
             {
-                var lista = from p in contexto.Product
-                            where p.name == name
+            AdventureWorks2016Entities contexto = new AdventureWorks2016Entities();
+            var lista = from p in contexto.Product
+                            where p.Name == name
                             select p;
-                return lista.tolist();
+                return lista.ToList();
             }
         }
     }
-}
+
