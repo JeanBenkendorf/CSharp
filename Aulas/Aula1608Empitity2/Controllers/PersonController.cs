@@ -15,16 +15,57 @@ namespace Aula1608Empitity2.Controllers
 
             contexto.Person.Add(p);
             contexto.SaveChanges();
-
         }
-
-        List<Person> ListarTodoPerson()
+        List<Person> ListarTodosPerson()
         {
             AdventureWorks2016Entities contexto = new AdventureWorks2016Entities();
             return contexto.Person.ToList();
-
         }
 
+        Person BuscarPorID(int ID)
+        {
+            AdventureWorks2016Entities contexto = new AdventureWorks2016Entities();
 
+            return contexto.Person.Find(ID);
+        }
+
+        void Excluir(int ID)
+        {
+
+            Person pExcluir = BuscarPorID(ID);
+
+            if (pExcluir != null)
+            {
+                AdventureWorks2016Entities contexto = new AdventureWorks2016Entities();
+                contexto.Person.Remove(pExcluir);
+                contexto.SaveChanges();
+            }
+
+        }
+        void editar (int id, Person novoDadosPerson)
+            {
+            Person personAntigo = BuscarPorID(ID);
+
+            if(personAntigo != null)
+            {
+                personAntigo.FirstName = novoDadosPerson.FirstName;
+                personAntigo.LastName = novoDadosPerson.LastName;
+                personAntigo.Title = novoDadosPerson.Title;
+
+                AdventureWorks2016Entities contexto = new AdventureWorks2016Entities();
+                contexto.Entry(personAntigo).State = System.Data.Entity.EntityState.Modified;
+                contexto.SaveChanges();
+            }
+
+            }
+
+        List<Person> PesquisarPorFirstName(string firstName)
+        {
+            AdventureWorks2016Entities contexto = new AdventureWorks2016Entities;
+            //
+            var lista = from p in contexto.Person
+                       select p;
+
+        }
     }
 }
