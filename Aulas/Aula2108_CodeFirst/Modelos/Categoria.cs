@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Aula2108_CodeFirst.Modelos
+{
+    class Categoria
+    {
+        public int CategoriaId { get; set; }
+        public int Nome { get; set; }
+        public int Descricao { get; set; }
+    }
+}
